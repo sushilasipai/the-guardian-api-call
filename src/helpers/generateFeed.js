@@ -1,5 +1,6 @@
 const dayjs = require("dayjs");
 
+//returns section articles as W3C standardized RSS Feeds
 const generateFeed = (articles, sectionName) => {
   return `<?xml version="1.0" encoding="UTF-8"?>
     <rss version="2.0">
@@ -13,6 +14,7 @@ const generateFeed = (articles, sectionName) => {
     </rss>`;
 };
 
+//convert each article to xml form to return RSS feed
 const generateRssItems = (articles) => {
   return articles.reduce((items, article) => {
     return (items =

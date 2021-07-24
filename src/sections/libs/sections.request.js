@@ -2,6 +2,7 @@ const axios = require("axios");
 const envVars = require("../../configs/env.configs");
 
 const ArticleRequestService = {
+  //gets articles for section name through API call
   getArticleFromAPI: async (
     sectionName,
     page = 1,

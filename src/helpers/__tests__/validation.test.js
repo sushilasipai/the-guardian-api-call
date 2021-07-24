@@ -1,6 +1,7 @@
 const { it } = require("@jest/globals");
 const { validSectionName } = require("../validation");
 
+//unit test for section name validation
 describe("validation module", () => {
   describe("section name validation", () => {
     it("should not be empty", (done) => {

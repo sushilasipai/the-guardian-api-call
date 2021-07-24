@@ -9,7 +9,8 @@ Firstly, setup all the environment variables on .env file as shown in the exampl
 ## Run project
 
 1. Run `npm start` to start the project.
-2. Navigate to `http://localhost:{port}/` where {port} is the port number set on PORT of .env file or `http://localhost:3000/` if PORT was not set initially.
+2. Navigate to `http://localhost:[port]/api/section/[section-name]`
+   where [port] is the port number set on PORT of .env file with the default value of 3000 and [section-name] is the section name or category name which must be indicated using only lowercase letters and hyphens.
 
 ## Running tests
 

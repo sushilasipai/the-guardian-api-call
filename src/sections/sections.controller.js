@@ -14,8 +14,10 @@ const sectionController = {
     }
 
     try {
+      //gets articles for given section name in JSON format
       const articles = await SectionService.getArticles(sectionName);
 
+      //generates and returns RSS feeds for fetched articles
       const rssFeed = generateFeed(articles, sectionName);
       res.set("Content-Type", "text/xml");
 
