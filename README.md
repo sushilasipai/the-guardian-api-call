@@ -8,8 +8,9 @@ Firstly, setup all the environment variables on .env file as shown in the exampl
 
 ## Run project
 
-Run `npm start` to start the project. Navigate to `http://localhost:{port}/` where {port} is the port number set on PORT of .env file or `http://localhost:3000/` if PORT was not set initially.
+1. Run `npm start` to start the project.
+2. Navigate to `http://localhost:{port}/` where {port} is the port number set on PORT of .env file or `http://localhost:3000/` if PORT was not set initially.
 
-## Running unit tests
+## Running tests
 
 Run `npm run test` to execute the unit and integration tests via [Jest](https://www.npmjs.com/package/jest).
