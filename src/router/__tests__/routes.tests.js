@@ -2,18 +2,19 @@ const app = require("../../configs/app.configs");
 const request = require("supertest");
 
 describe("app integration", () => {
-  it("should be defined", () => {
+  it("should be defined", (done) => {
     expect(app).toBeDefined();
+    done();
   });
 
   let server;
 
-  beforeAll(() => {
-    server = app.listen(3000);
+  beforeAll(async () => {
+    server = await app.listen(3001);
   });
 
-  afterAll(() => {
-    server.close();
+  afterAll(async () => {
+    await server.close();
   });
 
   describe("routes", () => {
