@@ -1,6 +1,7 @@
 const app = require("./src/configs/app.configs");
 const envVar = require("./src/configs/env.configs");
+const logger = require("./src/helpers/logger");
 
-app.listen(envVar.port || 3000, () => {
-  console.log("App is listening to port", envVar.port || 3000);
+app.listen(envVar.port, () => {
+  logger.info("App is listening to port " + envVar.port);
 });

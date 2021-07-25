@@ -15,7 +15,6 @@ const ArticleRequestService = {
       );
       return response.data.response.results;
     } catch (error) {
-      console.log(JSON.stringify(error.response));
       throw error;
     }
   },
