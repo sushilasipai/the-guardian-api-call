@@ -1,6 +1,7 @@
 const { validSectionName } = require("../helpers/validation");
 const SectionService = require("./libs");
 const { generateFeed } = require("../helpers/generateFeed");
+const logger = require("../helpers/logger");
 
 const sectionController = {
   getArticle: async (req, res) => {
@@ -22,7 +23,8 @@ const sectionController = {
       res.set("Content-Type", "text/xml");
 
       return res.send(rssFeed);
-    } catch (err) {
+    } catch (error) {
+      logger.error(error);
       return res.status(500).json({ message: "error while fetching articles" });
     }
   },
