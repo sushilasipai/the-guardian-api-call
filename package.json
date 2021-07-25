@@ -4,7 +4,7 @@
   "description": "app to call the guardian sections api",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "test": "jest --runInBand"
   },
   "repository": {
@@ -20,14 +20,15 @@
   "dependencies": {
     "axios": "^0.21.1",
     "dayjs": "^1.10.6",
+    "docker": "^1.0.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "http-error": "0.0.6",
-    "node-cache": "^5.1.2",
-    "nodemon": "^2.0.12"
+    "node-cache": "^5.1.2"
   },
   "devDependencies": {
     "jest": "^27.0.6",
+    "nodemon": "^2.0.12",
     "sinon": "^11.1.1",
     "supertest": "^6.1.4"
   }

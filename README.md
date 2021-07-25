@@ -1,10 +1,11 @@
 # the-guardian-api-call
 
-This project is a server-side application to expose RSS feeds corresponding to the categories(sections) of The Guardian, a leading UK newspaper.
+This project is a server-side application to expose RSS feeds corresponding to the categories(sections) of The Guardian, a leading UK newspaper. It takes section name as an input and returns 20 latest data of that section as RSS feeds.
 
 ## Initial Setup
 
-Firstly, setup all the environment variables on .env file as shown in the example on .env.example file.
+1. Firstly, setup all the environment variables on .env file in the root path as shown in the example on .env.example file.
+2. Run `npm install` to install all the project dependencies.
 
 ## Run project
 
